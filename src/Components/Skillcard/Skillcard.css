@@ -1,0 +1,39 @@
+.skillCard {
+    background-color: rgba(255, 255, 255, 0.7);
+    min-width: min(40%, 450px);
+    border-radius: 10px;
+    margin: 10px 20px;
+    box-shadow: 0 0 3px 0px rgba(0 0 0 / 10%);
+}
+
+.dark .skillCard {
+  background: rgba(255 255 255 / 10%);
+}
+
+.skillCard > div.name {
+  padding: 25px;
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: var(--accent);
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress {
+  height: 9px;
+  border-radius: 4px;
+  background-color: var(--dg);
+}
+
+@media screen and (max-width: 860px) {
+  .skillCard {
+    min-width: min(43%, 450px);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .skillCard {
+    min-width: min(90%, 450px);
+  }
+}
