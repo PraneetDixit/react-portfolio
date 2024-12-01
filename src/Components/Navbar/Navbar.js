@@ -10,12 +10,12 @@ export default function Navbar(props) {
   return (
     <nav>
       <div id="home">
-        <a href="#">Praneet Dixit</a>
+        <a href="#home">Praneet Dixit</a>
       </div>
       <div className="spacer"></div>
       <ul className={expand?"show":""}>
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -28,10 +28,10 @@ export default function Navbar(props) {
         </li>
       </ul>
       <button id="toggle" onClick={props.toggleTheme}>
-        {props.theme=="light" &&
+        {props.theme==="light" &&
         <FontAwesomeIcon icon="fa-solid fa-moon" style={{ color: "inherit" }} />
         }
-        {props.theme=="dark" &&
+        {props.theme==="dark" &&
         <FontAwesomeIcon icon="fa-solid fa-sun" style={{ color: "inherit" }} />
         }
       </button>

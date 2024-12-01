@@ -19,17 +19,17 @@ export default function Projectcard(props) {
         <p>{props.project.description}</p>
         <div className="cardLinks">
           {props.project.link && (
-            <a href={props.project.link} target="_blank">
+            <a href={props.project.link} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon="fa-arrow-up-right-from-square fa-solid"></FontAwesomeIcon>
             </a>
           )}
           {props.project.github && (
-            <a href={props.project.github} target="_blank">
+            <a href={props.project.github} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon="fa-brands fa-github"></FontAwesomeIcon>
             </a>
           )}
           {props.project.codepen && (
-            <a href={props.project.codepen} target="_blank">
+            <a href={props.project.codepen} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon="fa-brands fa-codepen"></FontAwesomeIcon>
             </a>
           )}

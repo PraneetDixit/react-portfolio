@@ -53,10 +53,10 @@ library.add(
 function App() {
   const [theme, settheme] = useState("light");
   const toggleTheme = () => {
-    settheme(theme == "light" ? "dark" : "light");
+    settheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <div id="wrapper" className={theme == "light" ? "" : "dark"}>
+    <div id="wrapper" className={theme === "light" ? "" : "dark"}>
       <Navbar theme={theme} toggleTheme={toggleTheme}></Navbar>
       <main>
         {/* <ScrollAnimation animateIn="fadeIn" initiallyVisible={true}> */}
@@ -156,7 +156,7 @@ function App() {
           <motion.img
             src={avatar}
             whileHover={{ scale: 1.02, filter: "none" }}
-            style={theme == "dark" ? { filter: "grayscale(100%)" } : ""}
+            style={theme === "dark" ? { filter: "grayscale(100%)" } : ""}
             transition={{ duration: 0.3 }}
             alt="Praneet Dixit"
           />
