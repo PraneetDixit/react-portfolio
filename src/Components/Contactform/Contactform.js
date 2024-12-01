@@ -3,7 +3,7 @@ import "./Contactform.css";
 import { motion } from "motion/react";
 
 export default function Contactform() {
-  const [state, handleSubmit, reset] = useForm("xdkoprrk");
+  const [state, handleSubmit] = useForm("xdkoprrk");
   if (state.submitted) {
     alert("Thanks for reaching out!");
   }
