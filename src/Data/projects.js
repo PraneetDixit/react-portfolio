@@ -1,11 +1,21 @@
 import angular from '../Resources/angular.jpg'
 import ip from '../Resources/ip.jpg'
 import todo from '../Resources/todo.jpg'
-import fb from '../Resources/fb.jpg'
-import smartphone from '../Resources/smartphone.jpg'
+// import fb from '../Resources/fb.jpg'
+// import smartphone from '../Resources/smartphone.jpg'
 import sprouty from '../Resources/Sprouty.jpg'
+import pitchnest from '../Resources/Pitchnest.png'
 
 const projects = [
+  {
+    name: "PitchNest",
+    description:
+      "Groove to your favorite tracks, share playlists, and vibe together!",
+    img: pitchnest,
+    link: "https://pitchnest.netlify.app/",
+    github: "https://github.com/PraneetDixit/spotify-clone",
+    tags: ["React", "MongoDB", "Express", "REST API"],
+  },
   {
     name: "Where in the World",
     description:
@@ -40,7 +50,7 @@ const projects = [
     link: "https://thetodolist.netlify.app/",
     tags: ["Local Storage"],
   },
-  {
+  /*{
     name: "Facebook Messenger",
     description: "Recreation of the Facebook Messenger UI",
     img: fb,
@@ -55,7 +65,7 @@ const projects = [
     link: "https://mysmartphone.netlify.app/",
     github: "https://github.com/PraneetDixit/Smartphone",
     tags: ["CSS"],
-  },
+  },*/
 ];
 
 export default projects;

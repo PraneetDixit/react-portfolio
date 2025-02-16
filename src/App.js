@@ -128,7 +128,7 @@ function App() {
         >
           <p className="fPara">Hello! I am </p>
           <p className="sPara">Praneet Dixit</p>
-          <p className="tPara">Front end developer</p>
+          <p className="tPara">Student | Developer | Tech Enthusiast</p>
           <div>
             <a href="#about">About Me</a>
             <a href="#contact">Let's talk</a>
@@ -139,15 +139,13 @@ function App() {
       <div id="about">
         <div className="aboutInfo">
           <p>
-            My name is Praneet Dixit and I am a web developer I am a first year
-            undergraduate student of the Department of Mechanical Engineering at
-            IIT Kharagpur.
-            <br />
-            I have completed my schooling from JNV Banswara - II and have been
-            developing websites since 2021.
-            <br />I have been participating in various coding competitions and
-            have won Silver Medal at JuniorSkills Championship 2021 in the
-            Web-technologies group, organized by CBSE and NSDC.
+            I am a first-year undergraduate at IIT Kharagpur, pursuing a B.Tech in Mechanical Engineering. With a strong foundation in core engineering principles, I am passionate about software development and building scalable applications.
+            <br/>
+            I have been working with front-end technologies since 2021, gaining experience in crafting responsive and user-friendly web applications. My current focus is on ReactJS and Next.js, and I am always eager to collaborate on innovative projects.
+            <br/>
+            Beyond development, I have actively contributed to various technical and managerial roles, enhancing my problem-solving and leadership skills. I thrive on learning new technologies and leveraging them to create impactful solutions.
+            <br/>
+            Check out my projects to see what I’ve been working on!
             <div className="btnGroup">
               <a href="#skills">My Skills</a>
               <a href="#contact">Reach out</a>
