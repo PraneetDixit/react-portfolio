@@ -17,7 +17,7 @@ import {
   // faHtml5,
   // faCss3Alt,
   // faSass,
-  fsEnvira,
+  faEnvira,
   faNodeJs,
   faGithub,
   faLinkedin,
