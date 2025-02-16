@@ -46,7 +46,7 @@ library.add(
   // faCss3Alt,
   // faSass,
   faNodeJs,
-  fsEnvira,
+  faEnvira,
   faArrowUpRightFromSquare,
   faHeart,
   faArrowUp
