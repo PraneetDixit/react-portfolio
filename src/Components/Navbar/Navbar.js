@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Navbar(props) {
-    const [expand, setexpand] = useState(false)
+    const [expand, setexpand] = useState(false);
+    const navRef = useRef();
+    useEffect(() => {
+      const closeDropdown = (e) => {
+          if (!navRef.current.contains(e.target)) {
+              setexpand(false);
+          }
+      };
+      document.body.addEventListener("mousedown", closeDropdown);
+      return () => document.body.removeEventListener("mousedown", closeDropdown);
+  }, []);
     const toggleNav = ()=>{
         setexpand(!expand)
     }
   return (
-    <nav>
+    <nav ref={navRef}>
       <div id="home">
         <a href="#home">Praneet Dixit</a>
       </div>

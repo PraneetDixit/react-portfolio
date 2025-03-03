@@ -10,11 +10,11 @@
 
 :root{
   --lr:#E63946;
-  --lw:#F1FAEE;
+  --lw:rgb(241, 250, 238);
   --lsb:#A8DADC;
   --llb:#457B9D;
   --ldb:#1D3557;
-  --ddb:#111a28;
+  --ddb:rgb(17, 26, 40);
   --dr:#d62828;
   --ddy:#f77f00;
   --dg:#00cf5d;
@@ -26,12 +26,14 @@
   --accent: var(--ldb);
   --text:var(--ldb);
   --accent2: var(--lr);
+  --bg-ham: rgba(241, 250, 238, 0.7);
 }
 
 #wrapper.dark{
   --bg: var(--ddb);
   --accent: var(--dg);
   --text: var(--dw);
+  --bg-ham: rgba(17, 26, 40, 0.7);
 }
 
 a{
