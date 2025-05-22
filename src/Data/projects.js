@@ -1,10 +1,12 @@
 import angular from '../Resources/angular.jpg'
 import ip from '../Resources/ip.jpg'
-import todo from '../Resources/todo.jpg'
-// import fb from '../Resources/fb.jpg'
-// import smartphone from '../Resources/smartphone.jpg'
 import sprouty from '../Resources/Sprouty.jpg'
 import pitchnest from '../Resources/Pitchnest.png'
+import wellbot from '../Resources/wellbot.png'
+import pacman from '../Resources/pacman.png'
+import nssc from '../Resources/nssc.png'
+import mount from '../Resources/mount.jpg'
+import rover from '../Resources/rover.png'
 
 const projects = [
   {
@@ -15,6 +17,28 @@ const projects = [
     link: "https://pitchnest.netlify.app/",
     github: "https://github.com/PraneetDixit/spotify-clone",
     tags: ["React", "MongoDB", "Express", "REST API"],
+  },
+  {
+    name: "WellBot", 
+    description: "Employee engagement platform with integrated chatbot. Developed as a submission to General Championship (OpenSoft).",
+    img: wellbot,
+    github: "https://github.com/LAL-BAHADUR-SHASTRI/Opensoft-2025/",
+    tags: ["React", "ShadCN"]
+  },
+  {
+    name: "Pacman",
+    description: "Pacman implementation in python with hand gesture recognition for controls",
+    img: pacman,
+    github: "https://github.com/PraneetDixit/Pacman-MediaPipe",
+    tags: ["Python", "MediaPipe"],
+  },
+  {
+    name: "NSSC - Concept",
+    description: "A concept web portal for NSSC - Asia's largest astrotech fest",
+    img: nssc,
+    github: "https://github.com/PraneetDixit/NSSC-Next",
+    link: "https://nssc-next.vercel.app/",
+    tags: ["NextJS", "Motion"]
   },
   {
     name: "Where in the World",
@@ -43,29 +67,19 @@ const projects = [
     tags: ["GSAP"],
   },
   {
-    name: "To do list",
-    description: "A simple to do list",
-    img: todo,
-    github: "https://github.com/PraneetDixit/ToDoList",
-    link: "https://thetodolist.netlify.app/",
-    tags: ["Local Storage"],
-  },
-  /*{
-    name: "Facebook Messenger",
-    description: "Recreation of the Facebook Messenger UI",
-    img: fb,
-    codepen: "https://codepen.io/PraneetDixit/full/xxRbOoV",
-    tags: ["UI"],
+    name: "Differential Mount Design",
+    description: "Mechanical design of a differential mount for FSAE cars",
+    img: mount,
+    link: "https://drive.google.com/file/d/1T4sCruGT4CqGxKzEEHGZod3c3XAxd1PA/view?usp=sharing",
+    tags: ["Mechanical Design"]
   },
   {
-    name: "Smartphone",
-    description:
-      "A fun project trying to recreate the design of Samsung Galaxy Ace",
-    img: smartphone,
-    link: "https://mysmartphone.netlify.app/",
-    github: "https://github.com/PraneetDixit/Smartphone",
-    tags: ["CSS"],
-  },*/
+    name: "Rover Chassis Design",
+    description: "Mechanical design of a rover chassis. Based on University Rover Challenge guidelines",
+    img: rover,
+    link: "https://drive.google.com/file/d/1FDIxa9CtcO4lC4lOHjq_ehsLSgYC70yS/view?usp=sharing",
+    tags: ["Mechanical Design"]
+  }
 ];
 
 export default projects;

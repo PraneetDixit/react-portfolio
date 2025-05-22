@@ -1,13 +1,14 @@
+// Using string-based icon names to match how Skillcard.js uses FontAwesome icons
+
 const skills = [
-  // { name: "HTML", percentage: 90, icon:"html5" },
-  // { name: "CSS", percentage: 90, icon:"css3-alt"},
-  // { name: "JavaScript", percentage: 80, icon:"js" },
-  // { name: "SASS", percentage: 75, icon:"sass" },
-  { name: "NodeJS", percentage: 70, icon:"node-js" },
-  { name: "React", percentage: 50, icon:"react" },
-  { name: "Angular", percentage: 50, icon:"angular" },
-  { name: "ExpressJS", percentage: 50, icon: "js"},
-  { name: "MongoDB", percentage: 45, icon:"envira"},
+  { name: "NodeJS", percentage: 70, icon: "node-js", solid: false },
+  { name: "React", percentage: 50, icon: "react", solid: false },
+  { name: "Angular", percentage: 50, icon: "angular", solid: false },
+  { name: "ExpressJS", percentage: 50, icon: "js", solid: true },
+  { name: "MongoDB", percentage: 45, icon: "envira", solid: false },
+  { name: "Python", percentage: 45, icon: "python", solid: false },
+  { name: "SolidWorks", percentage: 60, icon: "gear", solid: true },
+  { name: "NextJS", percentage: 30, icon: "circle-notch", solid: true }
 ];
 
 export default skills;

@@ -7,7 +7,7 @@ export default function Skillcard(props) {
   return (
     <motion.div className='skillCard' whileHover={{scale:1.02}}>
       <div className='name'>{props.skill.name}
-        <FontAwesomeIcon icon={`fa-brands fa-${props.skill.icon}`} style={{fontSize:"30px"}}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={`fa-${props.skill.solid? "solid": "brands"} fa-${props.skill.icon}`} style={{fontSize:"30px"}}></FontAwesomeIcon>
       </div>
       <motion.div className='progress' initial="zero"
           whileInView="full"
