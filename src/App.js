@@ -146,7 +146,7 @@ function App() {
             <div id="about">
                 <div className="aboutInfo">
                     <p>
-                        I’m a first-year undergraduate at IIT Kharagpur,
+                        I’m a second-year undergraduate at IIT Kharagpur,
                         pursuing a B.Tech in Mechanical Engineering. I started
                         out with a strong interest in front-end web development
                         and have since grown into full-stack development,
