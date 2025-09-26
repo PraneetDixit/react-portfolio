@@ -28,7 +28,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "motion/react";
-import avatar from "./Resources/Praneet.jpg";
+import avatar from "./Resources/Praneet.JPG";
 import skills from "./Data/skills";
 import projects from "./Data/projects";
 import Skillcard from "./Components/Skillcard/Skillcard";
