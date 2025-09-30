@@ -239,6 +239,12 @@ footer a {
   }
 }
 
+@media screen and (max-width: 1320px) {
+  .aboutInfo,
+  .projectsInfo {
+    padding: 40px max(5%, 40px);
+  }
+}
 @media screen and (max-width: 710px) {
   main {
     flex-direction: column-reverse;
@@ -279,14 +285,20 @@ footer a {
     order: 1;
     padding: 5px 10px;
   }
-}
 
-@media screen and (max-width: 1320px) {
-  .aboutInfo,
-  .projectsInfo {
-    padding: 40px max(5%, 40px);
+  .aboutInfo, .projectsInfo{
+    padding: 40px 10px;
+  }
+
+  #about p{
+    line-height: 1.6;
+  }
+
+  footer{
+    padding: 50px;
   }
 }
+
 
 @media screen and (max-width: 1070px) {
   .aboutInfo img {
@@ -405,5 +417,53 @@ footer a {
 @media screen and (max-width:600px){
   #contact .contactInfo{
     padding: 40px 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main{
+    padding: 20px;
+  }
+
+  #about p{
+    font-size: 16px;
+  }
+
+  .fPara{
+    font-size: 20px;
+  }
+
+  .sPara{
+    font-size: 64px;
+  }
+
+  .tPara{
+    font-size: 22px;
+  }
+
+  #home{
+    font-size: 26px;
+  }
+
+  .info a{
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .follow{
+    font-size: 18px;
+  }
+
+  .aboutInfo img{
+    width: 200px;
+  }
+
+  .btnGroup a{
+    font-size: 14px;
+    padding: 6px 18px;
+  }
+
+  footer{
+    padding: 50px 30px;
   }
 }
