@@ -1,5 +1,4 @@
 import angular from "../Resources/angular.jpg";
-import ip from "../Resources/ip.jpg";
 import pitchnest from "../Resources/Pitchnest.png";
 import wellbot from "../Resources/wellbot.png";
 import pacman from "../Resources/pacman.png";
@@ -8,8 +7,16 @@ import mount from "../Resources/mount.jpg";
 import rover from "../Resources/rover.png";
 import stylecast from "../Resources/stylecast.png";
 import propup from "../Resources/propup.png";
+import proboticists from "../Resources/Proboticists.png";
 
 const projects = [
+    {
+        name: "Team Proboticists",
+        description: "Website for Proboticists, a next gen robotics club",
+        img: proboticists,
+        link: "https://proboticists.tech",
+        tags: ["django"]
+    },
     {
         name: "stylecast",
         description: "Immersive website for a brand",
@@ -58,15 +65,6 @@ const projects = [
         github: "https://github.com/praneetdixit/angular-countries/",
         link: "https://angular-countries.netlify.app/",
         tags: ["Angular", "REST API"],
-    },
-    {
-        name: "IP Address Tracker",
-        description:
-            "An app for tracking any IP address. Provides interactive visualization on an integrated map",
-        img: ip,
-        github: "https://github.com/praneetdixit/ip-tracker/",
-        link: "https://where-ip.netlify.app/",
-        tags: ["REST API", "Leaflet"],
     },
     {
       name:"ProPup Feet Design",
