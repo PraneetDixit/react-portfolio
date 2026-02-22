@@ -8,6 +8,7 @@ import rover from "../Resources/rover.png";
 import stylecast from "../Resources/stylecast.png";
 import propup from "../Resources/propup.png";
 import proboticists from "../Resources/Proboticists.png";
+import robotix from "../Resources/robotix.png";
 
 const projects = [
     {
@@ -15,7 +16,7 @@ const projects = [
         description: "Website for Proboticists, a next gen robotics club",
         img: proboticists,
         link: "https://proboticists.tech",
-        tags: ["django"]
+        tags: ["django"],
     },
     {
         name: "stylecast",
@@ -23,6 +24,13 @@ const projects = [
         img: stylecast,
         link: "https://stylecast.de",
         tags: ["GatsbyJS", "Anime.js", "Three.js"],
+    },
+    {
+        name: "Robotix",
+        description: "Web portal for Technology Robotix Society, IIT Kharagpur",
+        img: robotix,
+        link: "https://robotix.in",
+        tags: ["NextJS", "Three.js", "GSAP"],
     },
     {
         name: "NSSC",
@@ -67,11 +75,12 @@ const projects = [
         tags: ["Angular", "REST API"],
     },
     {
-      name:"ProPup Feet Design",
-      description:"Mechanically compliant feet for enhanced grip and terrain adaptability",
-      img: propup,
-      link: "https://www.youtube.com/watch?v=H2i242ck_zw",
-      tags:["Mechanical Design"]
+        name: "ProPup Feet Design",
+        description:
+            "Mechanically compliant feet for enhanced grip and terrain adaptability",
+        img: propup,
+        link: "https://www.youtube.com/watch?v=H2i242ck_zw",
+        tags: ["Mechanical Design"],
     },
     {
         name: "Differential Mount Design",
