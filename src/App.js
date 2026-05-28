@@ -16,19 +16,15 @@ import {
     faReact,
     faAngular,
     faJs,
-    // faHtml5,
-    // faCss3Alt,
-    // faSass,
     faEnvira,
     faNodeJs,
     faGithub,
     faLinkedin,
-    faCodepen,
     faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "motion/react";
-import avatar from "./Resources/Praneet.JPG";
+import avatar from "./Resources/praneet.jpeg";
 import skills from "./Data/skills";
 import projects from "./Data/projects";
 import Skillcard from "./Components/Skillcard/Skillcard";
@@ -41,7 +37,6 @@ library.add(
     faSun,
     faGithub,
     faLinkedin,
-    faCodepen,
     faReact,
     faAngular,
     faJs,
@@ -57,14 +52,16 @@ library.add(
 
 function App() {
     const [theme, settheme] = useState("light");
+    const [activeTab, setActiveTab] = useState("hardware");
+    
     const toggleTheme = () => {
         settheme(theme === "light" ? "dark" : "light");
     };
+    
     return (
         <div id="wrapper" className={theme === "light" ? "" : "dark"}>
             <Navbar theme={theme} toggleTheme={toggleTheme}></Navbar>
             <main>
-                {/* <ScrollAnimation animateIn="fadeIn" initiallyVisible={true}> */}
                 <motion.div
                     className="social"
                     initial="initial"
@@ -98,27 +95,12 @@ function App() {
                                 style={{ color: "inherit" }}
                             />
                         </motion.a>
-                        <motion.a
-                            href="https://codepen.io/PraneetDixit"
-                            target="_blank"
-                            variants={{
-                                initial: { marginBottom: 15 },
-                                animate: { marginBottom: 20 },
-                            }}
-                        >
-                            <FontAwesomeIcon
-                                icon="fa-brands fa-codepen"
-                                style={{ color: "inherit" }}
-                            />
-                        </motion.a>
                     </div>
 
                     <div className="line"></div>
                     <div className="follow">Follow Me</div>
                     <div className="line"></div>
                 </motion.div>
-                {/* </ScrollAnimation> */}
-                {/* <ScrollAnimation animateIn='fadeIn'> */}
 
                 <motion.div
                     className="info"
@@ -134,41 +116,28 @@ function App() {
                     <p className="fPara">Hello! I am </p>
                     <p className="sPara">Praneet Dixit</p>
                     <p className="tPara">
-                        Student | Developer | Tech Enthusiast
+                        Mechanical Engineering | Robotics | Full-Stack Developer
                     </p>
                     <div>
                         <a href="#about">About Me</a>
                         <a href="#contact">Let's talk</a>
                     </div>
                 </motion.div>
-                {/* </ScrollAnimation> */}
             </main>
+            
             <div id="about">
                 <div className="aboutInfo">
                     <p>
-                        I’m a second-year undergraduate at IIT Kharagpur,
-                        pursuing a B.Tech in Mechanical Engineering. I started
-                        out with a strong interest in front-end web development
-                        and have since grown into full-stack development,
-                        exploring technologies like ReactJS, Next.js, and
-                        Node.js to build scalable and responsive applications.
-                        <br />
-                        More recently, I’ve been diving into interdisciplinary
-                        fields—combining software and hardware to solve
-                        real-world problems. My current projects span robotics,
-                        computer vision, and mechanical design. I’m especially
-                        involved in the design and development of UAVs (Unmanned
-                        Aerial Vehicles), where I apply core mechanical
-                        principles to CAD modeling, simulation, and system
-                        integration.
-                        <br />
-                        Whether it’s writing clean, maintainable code or
-                        optimizing mechanical systems for performance, I enjoy
-                        building things that work—and work well.
-                        <br />
-                        Feel free to explore my projects and see how I blend
-                        engineering and technology to create innovative
-                        solutions.
+                        I’m a third-year undergraduate student at IIT Kharagpur pursuing a B.Tech in Mechanical Engineering, 
+                        and a hardware enthusiast who loves to design, build, and test physical systems.
+                        <br /><br />
+                        My core focus lies in mechanical design, primarily for robotics and mechatronic applications. 
+                        I enjoy taking ideas from initial CAD models all the way to functional hardware.
+                        <br /><br />
+                        Apart from the mechanical side, I also actively develop software. Whether it's writing 
+                        code to interface with robotic systems, analyzing engineering data, or building industry-grade 
+                        applications like Learning Management Systems (LMS), Management Information Systems (MIS), 
+                        and full-stack websites, I love tackling engineering challenges from end to end.
                         <div className="btnGroup">
                             <a href="#skills">My Skills</a>
                             <a href="#contact">Reach out</a>
@@ -192,6 +161,7 @@ function App() {
                     <div className="line"></div>
                 </div>
             </div>
+            
             <div id="skills">
                 <div className="skillsTag">
                     <div className="line"></div>
@@ -199,14 +169,53 @@ function App() {
                     <div className="line"></div>
                 </div>
                 <div className="skillInfo">
-                    {skills.map((val, ind) => (
-                        <Skillcard key={ind} skill={val}></Skillcard>
+                    {skills.map((category, catInd) => (
+                        <motion.div
+                            key={catInd}
+                            className="skillCategory"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.45, delay: catInd * 0.1 }}
+                        >
+                            <div className="skillCategoryHead">
+                                <h3>{category.title}</h3>
+                            </div>
+                            <div className="skillGrid">
+                                {category.items.map((skill, skillInd) => (
+                                    <Skillcard key={skillInd} skill={skill}></Skillcard>
+                                ))}
+                            </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
+            
             <div id="projects">
                 <div className="projectsInfo">
-                    {projects.map((val, ind) => (
+                    <div className="tabs btnGroup" style={{width: '100%', marginBottom: 20}}>
+                        <a
+                            href="#projects"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setActiveTab("hardware");
+                            }}
+                            className={activeTab === "hardware" ? "active" : ""}
+                        >
+                            Hardware
+                        </a>
+                        <a
+                            href="#projects"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setActiveTab("software");
+                            }}
+                            className={activeTab === "software" ? "active" : ""}
+                        >
+                            Software
+                        </a>
+                    </div>
+                    {projects[activeTab].map((val, ind) => (
                         <Projectcard
                             key={ind}
                             project={val}
@@ -220,6 +229,7 @@ function App() {
                     <div className="line"></div>
                 </div>
             </div>
+            
             <div id="contact">
                 <div className="contactTag">
                     <div className="line"></div>
@@ -230,6 +240,7 @@ function App() {
                     <Contactform></Contactform>
                 </div>
             </div>
+            
             <footer>
                 <span>
                     Made with{" "}

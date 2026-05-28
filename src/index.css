@@ -27,6 +27,10 @@
   --text:var(--ldb);
   --accent2: var(--lr);
   --bg-ham: rgba(241, 250, 238, 0.7);
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.88);
+  --surface-border: rgba(29, 53, 87, 0.08);
+  --surface-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
 }
 
 #wrapper.dark{
@@ -34,6 +38,10 @@
   --accent: var(--dg);
   --text: var(--dw);
   --bg-ham: rgba(17, 26, 40, 0.7);
+  --surface: rgba(255, 255, 255, 0.08);
+  --surface-strong: rgba(255, 255, 255, 0.12);
+  --surface-border: rgba(255, 255, 255, 0.08);
+  --surface-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
 }
 
 a{

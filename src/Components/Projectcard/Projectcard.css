@@ -1,16 +1,16 @@
 .projectCard{
-    width: 300px;
-    margin: 20px;
-    background-color: var(--dw);
-    border-radius: 15px;
+    width: min(300px, 100%);
+    margin: 16px;
+    background: var(--surface);
+    border-radius: 18px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 3px 0px rgba(0 0 0 / 10%);
+    border: 1px solid var(--surface-border);
+    box-shadow: var(--surface-shadow);
     color: var(--text);
 }
 
 .dark .projectCard{
-    background-color: rgba(255, 255, 255, 0.1);
+    background: var(--surface);
 }
 
 .projectCard img{
@@ -19,7 +19,7 @@
 }
 
 .cardInfo{
-    padding: 20px 25px 35px 25px;
+    padding: 20px 22px 28px;
 }
 
 .cardInfo h2{
@@ -47,4 +47,22 @@
 .tags{
     margin-top: 10px;
     opacity: 0.8;
+}
+
+@media screen and (max-width: 900px) {
+    .projectCard {
+        width: min(100%, 420px);
+        margin: 12px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cardInfo h2 {
+        font-size: 22px;
+    }
+
+    .cardInfo p {
+        font-size: 16px;
+        line-height: 23px;
+    }
 }
